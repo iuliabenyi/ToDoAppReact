@@ -1,0 +1,37 @@
+﻿@model DisplayToDoItem
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-controller="Items" asp-action="Edit">
+    <p></p>
+    <div class="row form-group">
+        <div class="col-md-2 col-md-offset-2">
+            <label asp-for="ItemId"></label>
+        </div>
+        <div class="col-md-2">
+            <input class="form-control" asp-for="ItemId" />
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-md-2 col-md-offset-2">
+            <label asp-for="Title"></label>
+        </div>
+        <div class="col-md-2">
+            <input class="form-control" asp-for="Title" />
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-md-2 col-md-offset-2">
+            <label asp-for="Description"></label>
+        </div>
+        <div class="col-md-2">
+            <input class="form-control" asp-for="Description" />
+        </div>
+    </div>
+    <button type="submit" class="nav-link btn btn-link text-dark">Submit</button>
+</form>

@@ -1,0 +1,18 @@
+﻿@using Data.Entities
+@{
+    ViewData["Title"] = "Delete an item";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-controller="Items" asp-action="Delete" method="post">
+    <p></p>
+    <div class="row form-group">
+        <div class="col-md-2 col-md-offset-2">
+            <label>id</label>
+        </div>
+        <div class="col-md-2">
+            <input class="form-control" name="itemid" />
+        </div>
+    </div>
+    <button type="submit" class="nav-link btn btn-link text-dark">Submit</button>
+</form>
